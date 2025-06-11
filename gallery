@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .flex-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .flex-gallery .dog {
+            width: calc(50% - 5px);
+            height: 100px;
+        }
+
+        .flex-gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+
+
+
+
+        .grid-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        .grid-gallery img {
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Dog Breeds</h2>
+    <div class="flex-gallery">
+        <img src="https://th.bing.com/th/id/OIP.XMsATtC1tJY68Z8PTrfzAAHaE8?rs=1&pid=ImgDetMain" height="50px" width="50px" alt="Pomrenian">                                      
+        <img src="https://th.bing.com/th/id/OIP.08koL6WINLABYfJRgfw8rwHaE8?rs=1&pid=ImgDetMain"  alt="Golden retriever">
+        <img src="https://th.bing.com/th/id/OIP.JF9NpcNl5qkp2EMa7TxA4gHaHx?rs=1&pid=ImgDetMain" alt="Labrador Retriever">                             
+        <img src="https://animalsbreeds.com/wp-content/uploads/2014/07/Pug-4.jpg" alt="Pug">
+    </div>
+
+    <h2>Bird Varieties</h2>
+    <div class="grid-gallery">
+        <img src="https://cdn.britannica.com/01/91701-050-E6C35C16.jpg" alt="peacock" >                       
+        <img src="https://www.thesprucepets.com/thmb/jP0CorffApXa-NyoAwQfqG1jvRU=/3865x2576/filters:fill(auto,1)/close-up-of-gold-and-blue-macaw-perching-on-tree-962288862-5b50073e46e0fb0037c23c23.jpg" alt="Parrot">
+        <img src="https://th.bing.com/th/id/OIP.lV1o4S18WSRyrgVU9iYE7QHaFd?rs=1&pid=ImgDetMain" alt="duck">                        
+        <img src=" https://th.bing.com/th/id/OIP.tlT06Mz2BMfwrqBEO3RTiAHaE7?rs=1&pid=ImgDetMain" alt="dove">
+    </div>
+</body>
+</html>
