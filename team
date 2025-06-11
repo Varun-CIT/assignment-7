@@ -1,1 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Section</title>
+    <style>
+        /* Team Section Styles */
+        .team-section {
+            text-align: center;
+            padding: 20px;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+        }
+        
+        .company-name {
+    font-size: 40px; /* Change size */
+    font-family: Arial, sans-serif; /* Change font */
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.key-people {
+    font-size: 28px; /* Change size */
+    font-family: 'Open Sans', sans-serif; /* Change font */
+    color: #000;
+    text-shadow: 0 0 10px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+
+        
+        .company-logo {
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+            border-radius: 10px;
+        }
+        
+        .team-member {
+            display: inline-block;
+            width: 250px;
+            height: 300px;
+            margin: 10px;
+            perspective: 1000px;
+        }
+        
+        .team-member-card {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+        
+        .team-member:hover .team-member-card {
+            transform: rotateY(180deg);
+        }
+        
+        .team-member-front, .team-member-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background-color: rgba(255,255,255,0.8);
+        }
+        
+        .team-member-front {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .team-member-front img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        
+        .team-member-back {
+            transform: rotateY(180deg);
+            padding: 20px;
+            text-align: left;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        /* Footer Styles */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="team-section">
+        <div class="company-header">
+            <img src="https://th.bing.com/th/id/OIP.O6xV4wBm2gPlE18ANgyGtQHaFj?w=1500&h=1125&rs=1&pid=ImgDetMain" alt="Company Logo" class="company-logo">
+            <div style="text-align: center;">
+                <h2>Reliance Corporation</h2>
+                <p class="key-people" style="text-align: center;">Key People</p>
+
+            </div>
+        </div>
+        <div class="team-member">
+            <div class="team-member-card">
+                <div class="team-member-front">
+                    <img src="https://textileinsights.in/wp-content/uploads/2025/06/Mukesh-Ambani.jpg" alt="Member 1">
+                    <h3>Mukesh Ambani</h3>
+                    <p>Chairman & Managing Director</p>
+                </div>
+                <div class="team-member-back">
+                    <h3>About Mukesh Ambani</h3>
+                    <p>Mukesh Ambani is a renowned Indian business magnate and the chairman and managing director of Reliance Industries Limited (RIL).</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-member hidden">
+            <div class="team-member-card">
+                <div class="team-member-front">
+                    <img src="https://www.southjewellery.com/wp-content/uploads/2019/11/isha-ambani-diamond-emerald-jewellery-1.jpg" alt="Member 2">
+                    <h3>Isha Ambani</h3>
+                    <p>Non-Executive Director</p>
+                </div>
+                <div class="team-member-back">
+                    <h3>About Isha Ambani</h3>
+                    <p>Isha Ambani is a businesswoman and the daughter of Mukesh Ambani.</p>
+                    <p> She serves as a non-executive director on the board of Reliance Industries Limited.</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-member">
+    <div class="team-member-card">
+        <div class="team-member-front">
+            <img src="https://cdn.theorg.com/ae4b7111-939d-4427-9cbb-ea418891c4ad_thumb.jpg" alt="Jayachandran Sivaraman">
+            <h3>Jayachandran Sivaraman</h3>
+            <p>Company Secretary</p>
+        </div>
+        <div class="team-member-back">
+            <h3>About Jayachandran Sivaraman</h3>
+            <p>Jayachandran Sivaraman serves as the Company Secretary of Reliance Industries Limited. He oversees corporate governance, compliance, and secretarial functions.</p>
+        </div>
+    </div>
+</div>
+<div class="team-member">
+            <div class="team-member-card">
+                <div class="team-member-front">
+                    <img src="https://th.bing.com/th/id/OIP.6gssLaDWgbm8-6KgAqty7AHaEK?rs=1&pid=ImgDetMain" alt="Member 3">
+                    <h3>Arundhati Bhattacharya</h3>
+                    <p>Independent director</p>
+                </div>
+                <div class="team-member-back">
+                    <h3>About Arundhati Bhattacharya </h3>
+                    <p>Arundhati Bhattacharya serves as an Independent Director at Reliance Industries Limited, bringing decades of leadership experience from State Bank of India. She is also a Member of the Stakeholders’ Relationship Committee and Environmental, Social and Governance Committee at Reliance.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+        &copy; 2025 Reliance Corporation. All rights reserved.
+    </div>
+</body>
+</html>
+
+
+</html>
+       
+        
+        
 
